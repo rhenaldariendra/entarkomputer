@@ -27,9 +27,19 @@
             <li class="navlist-item">
                 <a href="#" class="item">About Us</a>
             </li>
-            <li class="navlist-item">
-                <a href="/login" class="item">Login</a>
-            </li>
+            @if (Session::has('user'))
+                <li class="navlist-item">
+                    <a href="#" class="item">{{Session::get('user')['username']}}</a>
+                </li>
+                <li class="navlist-item">
+                    <a href="/logout" class="item">Logout</a>
+                </li>
+            @else
+                <li class="navlist-item">
+                    <a href="/login" class="item">Login</a>
+                </li>
+            @endif
+
         </div>
     </div>
 
