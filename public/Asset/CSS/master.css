@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rubik:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+p, a{
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background-color: #212121;
+}
+
+/* Navbar */
+.navbar{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.navbar-left{
+    position:relative;
+    left: 60px;
+}
+
+.navbar-right{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 40px;
+    width: 584px;
+    top: 24px;
+    right: 25px;
+    align-items: flex-end;
+}
+.navbar-right .navlist-item{
+    position: relative;
+}
+.navbar-right a::after{
+    content: '';
+    position: absolute;
+    bottom: -6.5px;
+    /* bottom: -7.5px; */
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.4s ease-out;
+}
+.navbar-right a:hover::after{
+    left: 0;
+    width: 100%;
+}
+.navbar-right a.active{
+    border-bottom: 2px solid white ;
+    width: 100%;
+}
+.navbar-right a{
+    font-size: 15px;
+    padding: 0px 6px 10px;
+    line-height: 29px;
+    color: white;
+}
+/* ----------------------- */
+
+.footer{
+    height: fit-content;
+    padding: 0 65px;
+    background-color: #52057B;
+}
+.footer a, .footer p{
+    color: white;
+}
+.footer-logo{
+    height:97px;
+}
+.footer-logo img{
+    position: relative;
+    left: 32px;
+    top:29px;
+}
+
+.footer-link{
+    margin-top: 60px;
+    display: flex;
+}
+
+.foot-container{
+    width: 186px;
+    display: flex;
+    flex-direction: column;
+}
+.foot-container a{
+    padding-bottom: 10px;
+    font-weight: lighter;
+}
+.foot-container p{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-copyright{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 22px;
+}
+
+
+.footer-bottom{
+    display: flex;
+    height:110px;
+}
+.footer-left{
+    width: 50%;
+    align-items: center;
+    display: flex;
+}
+.footer-left a{
+    padding-left: 25px;
+}
+.footer-right{
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width:50%;
+    margin-right: 10px;
+    display: flex;
+}
+
+.right-bottom i{
+    padding: 0 10px;
+    font-size: 52px;
+}
+
